@@ -245,18 +245,6 @@ body {
 
 .processing .second_block .lang {height: 56px;border-radius: 4px 4px 0 0;box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);background-color: white;}
 
-/* .processing .second_block .select {
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: rgba(96, 101, 132, 0.75);
-    line-height: 56px;
-    cursor: pointer;
-} */
-
 .processing .second_block .select .element {float: left;text-align: center;width: 33%;}
 
 .processing .second_block .select .element.active {color:black;}
@@ -277,6 +265,8 @@ body {
     display: contents;
     color: #77da53;
 }
+
+.line {width: 33.3%;height: 1px;background-color: blue;transition: 0.3s ease-in;}
 
 .processing .second_block .soon {position: absolute;right: 20px;bottom: 20px;font-size: 12px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1;letter-spacing: normal;text-align: right;color: rgba(96, 101, 132, 0.5);}
 
@@ -529,8 +519,6 @@ body {
 
 .footer .top .buttons .run:hover {background-color: rgba(255, 255, 255, 0.75);}
 
-.footer .top .line {}
-
 .footer .bottom {display: flex;}
 
 .footer .bottom .logo_block {margin-top: 60px;margin-left: 80px;float: left;}
@@ -666,7 +654,6 @@ font-family: 'CircularStd';}
 .tab button.active {
     color: black;
     font-weight: 500;
-    border-bottom: blue solid 1px;
 }
 
 .tabcontent {
@@ -680,4 +667,4 @@ font-family: 'CircularStd';}
 
 .graph_image {background-image: url("img/graph.svg");width: 311px;height: 248px;margin-top: 26px;margin-left: 10px;}
 
-.custom_image {background-image: url("img/custom.svg");width: 329px;height: 264px;margin-top: 20px;margin-left: 4px;}
+.custom_image {background-image: url("img/custom.svg");width: 311px;height: 251px;margin-top: 25px;margin-left: 11px;}

@@ -63,7 +63,7 @@
                 <button class="tablinks" onclick="selectTab(event, 'custom')">Custom</button>
               </div>
 
-              <div class="line"></div>
+              <div id="line" class="line"></div>
             </section>
             <section id="sql" class="tabcontent" style="opacity: 1.0;">
               <div class="code"><div class="blue_text">SELECT</div> name, symbol, amount<br><div class="blue_text">FROM</div> token_balances<br><div class="blue_text">WHERE</div> address = <div class="green_text">0x0ddd...</div></div>
@@ -261,7 +261,6 @@
           <div class="get_started">GET STARTED WITH A CODE</div>
           <div class="run">RUN A NODE</div>
         </section>
-        <div class="line"></div>
       </section>
 
       <section class="bottom">
@@ -310,6 +309,7 @@
         var i, tabcontent, tablinks;
 
         tabcontent = document.getElementsByClassName("tabcontent");
+
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.opacity = "0.0";
         }
@@ -321,6 +321,17 @@
 
         tab_content = document.getElementById(tabName);
         tab_content.style.opacity = "1.0"
+
+        line = document.getElementById("line");
+        console.log(tabName);
+
+        if (tabName == "sql") {
+          line.style.marginLeft = "0";
+        } else if (tabName == "graph") {
+          line.style.marginLeft = "33%";
+        } else if (tabName == "custom") {
+          line.style.marginLeft = "66.6%";
+        }
 
         tab_content = document.getElementById(tabName+"2");
         tab_content.style.opacity = "1.0"
