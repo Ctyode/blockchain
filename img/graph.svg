@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="311px" height="252px" viewBox="0 0 311 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,0 L346,0 C348.209139,-4.05812251e-16 350,1.790861 350,4 L350,284 C350,286.209139 348.209139,288 346,288 L4,288 C1.790861,288 2.705415e-16,286.209139 0,284 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-1"></path>
+        <filter x="-17.1%" y="-16.7%" width="134.3%" height="141.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="18" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.152941176   0 0 0 0 0.325490196  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#E9EBF3" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#E9EBF3" offset="100%"></stop>
+        </linearGradient>
+        <path d="M78,0 L79,0 L79,228 L78,228 L78,0 Z" id="path-4"></path>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1" height="228" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <path d="M136,0 L137,0 L137,228 L136,228 L136,0 Z" id="path-6"></path>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1" height="228" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+        <path d="M193,0 L194,0 L194,228 L193,228 L193,0 Z" id="path-8"></path>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1" height="228" fill="white">
+            <use xlink:href="#path-8"></use>
+        </mask>
+        <path d="M251,0 L252,0 L252,228 L251,228 L251,0 Z" id="path-10"></path>
+        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1" height="228" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+        <linearGradient x1="100%" y1="-3.28344228%" x2="100%" y2="100%" id="linearGradient-12">
+            <stop stop-color="#1A55F6" stop-opacity="0.15" offset="0%"></stop>
+            <stop stop-color="#1A55F6" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="94.5810547%" y1="0%" x2="6.65966797%" y2="0%" id="linearGradient-13">
+            <stop stop-color="#026EF3" offset="0%"></stop>
+            <stop stop-color="#0A39B5" offset="100%"></stop>
+        </linearGradient>
+        <path d="M76.7277369,122.555466 L22.5564111,158.830907 C22.0975137,159.138205 21.4763902,159.015308 21.1690928,158.556411 C20.8617955,158.097514 20.9846916,157.47639 21.4435889,157.169093 L76.2244728,120.485465 C77.3128563,119.756637 78.7482714,119.818205 79.7702508,120.63755 L133.969849,164.090677 C134.831648,164.781601 136.090379,164.643081 136.781304,163.781282 C136.833838,163.715755 136.882194,163.646983 136.926082,163.575376 L190.786846,75.6972879 C191.652655,74.2846518 193.499699,73.8413611 194.912336,74.7071703 C195.134966,74.8436215 195.33883,75.008555 195.518758,75.1977891 L250.150846,132.655675 C250.770731,133.307623 251.749614,133.46547 252.543006,133.041415 L308.528623,103.118068 C309.0157,102.857734 309.621597,103.041545 309.881932,103.528623 C310.142266,104.0157 309.958455,104.621597 309.471377,104.881932 L252.814299,135.164163 C251.624211,135.800245 250.155887,135.563475 249.226059,134.585553 L194.966379,77.5193378 C194.205263,76.7188532 192.939335,76.6869391 192.138851,77.4480555 C192.012695,77.5680073 191.902739,77.7039163 191.811771,77.8523369 L138.03839,165.587854 C137.172581,167.00049 135.325536,167.443781 133.9129,166.577972 C133.805489,166.51214 133.702332,166.439607 133.604041,166.360805 L79.0915889,122.656856 C78.4102692,122.110625 77.4533259,122.06958 76.7277369,122.555466 Z" id="path-14"></path>
+        <filter x="-1.7%" y="-4.2%" width="103.5%" height="110.4%" filterUnits="objectBoundingBox" id="filter-15">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0901960784   0 0 0 0 0.298039216   0 0 0 0 0.866666667  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M41.3,30 L38.5,34 L35.7,30 L15,30 C6.71572875,30 1.01453063e-15,23.2842712 0,15 C-1.01453063e-15,6.71572875 6.71572875,1.52179594e-15 15,0 L62,0 C70.2842712,-1.52179594e-15 77,6.71572875 77,15 C77,23.2842712 70.2842712,30 62,30 L41.3,30 Z" id="path-16"></path>
+        <filter x="-77.9%" y="-141.2%" width="255.8%" height="452.9%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="18" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.152941176   0 0 0 0 0.325490196  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-18" cx="193" cy="75" r="4"></circle>
+        <filter x="-275.0%" y="-225.0%" width="650.0%" height="650.0%" filterUnits="objectBoundingBox" id="filter-19">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0117647059   0 0 0 0 0.419607843   0 0 0 0 0.937254902  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fluence_block2_3" transform="translate(-935.000000, -324.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="800"></rect>
+            <g id="Group-17" transform="translate(165.000000, 218.000000)">
+                <g id="Group-16" transform="translate(0.000000, 76.000000)">
+                    <g id="Group-10" transform="translate(760.000000, 0.000000)">
+                        <g id="Rectangle-3">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <path stroke="#E9EBF3" stroke-width="1" d="M4,0.5 C2.06700338,0.5 0.5,2.06700338 0.5,4 L0.5,284 C0.5,285.932997 2.06700338,287.5 4,287.5 L346,287.5 C347.932997,287.5 349.5,285.932997 349.5,284 L349.5,4 C349.5,2.06700338 347.932997,0.5 346,0.5 L4,0.5 Z" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd"></path>
+                        </g>
+                        <g id="Group-4" transform="translate(10.000000, 30.000000)">
+                            <g id="Group-2">
+                                <text id="avg.-transaction-fee" transform="translate(6.000000, 114.500000) rotate(-90.000000) translate(-6.000000, -114.500000) " font-family="CircularStd-Bold, Circular Std" font-size="12" font-weight="bold" line-spacing="12" fill="#606584" fill-opacity="0.25">
+                                    <tspan x="-81" y="120.5">AVG. TRANSACTION FEE, USD</tspan>
+                                </text>
+                                <polygon id="Rectangle-3-Copy-2" fill="#E9EBF3" points="20 0 21 0 21 228 20 228"></polygon>
+                                <use id="Rectangle-3-Copy-5" stroke="url(#linearGradient-3)" mask="url(#mask-5)" stroke-width="2" stroke-dasharray="3,4" xlink:href="#path-4"></use>
+                                <use id="Rectangle-3-Copy-6" stroke="url(#linearGradient-3)" mask="url(#mask-7)" stroke-width="2" stroke-dasharray="3,4" xlink:href="#path-6"></use>
+                                <use id="Rectangle-3-Copy-7" stroke="url(#linearGradient-3)" mask="url(#mask-9)" stroke-width="2" stroke-dasharray="3,4" xlink:href="#path-8"></use>
+                                <use id="Rectangle-3-Copy-8" stroke="url(#linearGradient-3)" mask="url(#mask-11)" stroke-width="2" stroke-dasharray="3,4" xlink:href="#path-10"></use>
+                                <polygon id="Rectangle-3-Copy-3" fill="#E9EBF3" points="20 227 310 227 310 228 20 228"></polygon>
+                                <path d="M21,227 L21,158 L75.6090577,120.920444 C77.0618154,119.934021 78.9880421,120.010435 80.3580944,121.108839 L135.740293,165.510084 L190.106569,76.8072128 C191.260981,74.9236981 193.723708,74.3326438 195.607222,75.487056 C195.904064,75.668991 196.175882,75.8889023 196.415785,76.1412145 L251.200084,133.759184 L308.528623,103.118068 C308.853341,102.944512 309.3438,103.277845 310,104.118068 C310.324718,185.8658 310.324718,226.826444 310,227 L21,227 Z" id="Path-8" fill="url(#linearGradient-12)"></path>
+                                <g id="Path-8-Copy-2" fill-rule="nonzero">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
+                                    <use fill="url(#linearGradient-13)" xlink:href="#path-14"></use>
+                                </g>
+                                <g id="Group" transform="translate(154.000000, 31.000000)">
+                                    <g id="Combined-Shape">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-16"></use>
+                                        <path stroke="#E9EBF3" stroke-width="1" d="M38.5,33.1281032 L41.0396722,29.5 L62,29.5 C70.0081289,29.5 76.5,23.0081289 76.5,15 C76.5,6.99187113 70.0081289,0.5 62,0.5 L15,0.5 C6.99187113,0.5 0.5,6.99187113 0.5,15 C0.5,23.0081289 6.99187113,29.5 15,29.5 L35.9603278,29.5 L38.5,33.1281032 Z" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd"></path>
+                                    </g>
+                                    <text id="0.218-USD" font-family="CircularStd-Bold, Circular Std" font-size="12" font-weight="bold" line-spacing="12" fill="#1F2753">
+                                        <tspan x="10.18" y="19.036">0.218 USD</tspan>
+                                    </text>
+                                </g>
+                                <text id="25.10" font-family="CircularStd-Bold, Circular Std" font-size="12" font-weight="bold" line-spacing="12" fill="#606584" fill-opacity="0.25">
+                                    <tspan x="20" y="248">25.10</tspan>
+                                </text>
+                                <text id="26.10" font-family="CircularStd-Bold, Circular Std" font-size="12" font-weight="bold" line-spacing="12" fill="#606584" fill-opacity="0.25">
+                                    <tspan x="78" y="248">26.10</tspan>
+                                </text>
+                                <text id="27.10" font-family="CircularStd-Bold, Circular Std" font-size="12" font-weight="bold" line-spacing="12" fill="#606584" fill-opacity="0.25">
+                                    <tspan x="136" y="248">27.10</tspan>
+                                </text>
+                                <text id="28.10" font-family="CircularStd-Bold, Circular Std" font-size="12" font-weight="bold" line-spacing="12" fill="#606584" fill-opacity="0.25">
+                                    <tspan x="193" y="248">28.10</tspan>
+                                </text>
+                                <text id="29.10" font-family="CircularStd-Bold, Circular Std" font-size="12" font-weight="bold" line-spacing="12" fill="#606584" fill-opacity="0.25">
+                                    <tspan x="255.188" y="246.036">29.10</tspan>
+                                </text>
+                                <g id="Oval">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-18"></use>
+                                    <circle stroke="#FFFFFF" stroke-width="2" fill="#036BEF" fill-rule="evenodd" cx="193" cy="75" r="5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

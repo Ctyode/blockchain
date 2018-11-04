@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <section class="overlay"></section>
+    <section class="main">
+
+      <div class="header">
+        <div class="logo"></div>
+        <section class="menu">
+          <div class="menu_element">Fluence Labs</div>
+          <div class="menu_element">Blog</div>
+          <div class="dropdown">
+            <div class="menu_element">Community</div>
+            <div class="container">
+              <div class="community_content">
+                <a href="#">Gitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">Telegram</a>
+                <a href="#">Reddit</a>
+              </div>
+              <div class="triangle"></div>
+            </div>
+          </div>
+
+        <div class="menu_element">Github</div>
+        </section>
+      </div>
+
+      <section class="manage_block">
+        <section class="left_block">
+          <h1>Manage your data in decentralized enviroment</h1>
+          <h2>Fluence network provides a permissionless infrastructure to aggregate, store, and process data from various decentralized sources.</h2>
+          <section class="button_block">
+            <div class="github"><b>8,123</b> on GitHub</div>
+            <div class="pseudo">
+              <div class="real"></div>
+              <div class="button"><span>GET STARTED</span></div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+
+      <section class="processing">
+        <h1>Processing Blockchain Data in Real-Time</h1>
+        <section class="blocks">
+          <section class="first_block">
+            <div class="top">Get token balances for Ethereum wallets matching specific rule</div>
+            <div class="middle">Aggregate order books from a few DEX</div>
+            <div class="bottom">Calculate Dogecoin average transaction costs aggregated by day</div>
+          </section>
+
+          <section class="second_block">
+            <section class="lang">
+              <div class="tab">
+                <button class="tablinks active" onclick="selectTab(event, 'sql')">SQL</button>
+                <button class="tablinks" onclick="selectTab(event, 'graph')">GraphQL</button>
+                <button class="tablinks" onclick="selectTab(event, 'custom')">Custom</button>
+              </div>
+
+              <div class="line"></div>
+            </section>
+            <section id="sql" class="tabcontent" style="opacity: 1.0;">
+              <div class="code"><div class="blue_text">SELECT</div> name, symbol, amount<br><div class="blue_text">FROM</div> token_balances<br><div class="blue_text">WHERE</div> address = <div class="green_text">0x0ddd...</div></div>
+            </section>
+
+            <section id="graph" class="tabcontent">
+              <div class="code"><div class="blue_text">SELECT</div><br><div class="blue_text">DATE</div>(timestamp) <div class="blue_text">AS</div> date, <br><div class="blue_text">AVG</div>(gas_price * gas_used) <div class="blue_text">AS</div> tx_cost <br><div class="blue_text">FROM</div> transactions tx <br><div class="blue_text">GROUP BY DATE</div>(timestamp)</div>
+            </section>
+
+            <section id="custom" class="tabcontent">
+              <div class="code"><div class="blue_text">SELECT</div> amount, price, type, source <br><div class="blue_text">FROM</div> orders <br><div class="blue_text">WHERE</div> source <div class="blue_text">IN</div> (<div class="green_text">“0x0ddd…”</div> , <br><div class="green_text">“0x545…”</div>, <div class="green_text">“0xg46de3…”</div>)</div>
+            </section>
+            <div class="soon">COMING SOON</div>
+
+
+          </section>
+
+          <section class="third_block">
+            <section id="sql2" class="tabcontent third" style="opacity: 1.0;">
+              <section class="block_title">
+                <div class="asset">ASSET</div>
+                <div class="quantity">QUANTITY</div>
+              </section>
+              <ul class="blockchain">
+                <li class="element">
+                  <div class="name maker">Maker</div>
+                  <div class="amount">130.18 MKR</div>
+                </li>
+                <li class="element">
+                  <div class="name omg">OmiseGO</div>
+                  <div class="amount">24,234.5 OMG</div>
+                </li>
+                <li class="element">
+                  <div class="name x">0x</div>
+                  <div class="amount">105.213.4 ZRX</div>
+                </li>
+                <li class="element">
+                  <div class="name aeternity">Aeternity</div>
+                  <div class="amount">87.3 AE</div>
+                </li>
+              </ul>
+            </section>
+
+            <section id="graph2" class="tabcontent third">
+              <div class="graph_image"></div>
+            </section>
+
+            <section id="custom2" class="tabcontent third">
+              <div class="custom_image"></div>
+            </section>
+
+            </section>
+
+        </section>
+
+      </section>
+
+
+      <section class="developers">
+        <section class="left_text">
+          <div class="title">Built for the developers</div>
+          <div class="description">
+            Working with the decentralized data is a demanding task for the developer. It requires to deal with the nodes syncing and management, puzzles creation of real-time apps and consequently leads slower blockchain tech stack adoption in general.
+            <p>
+            Fluence network creates a permissionless network with decentralized consensus, “eventual security” model, capable of storing and processing arbitrary data in real-time.
+          </div>
+          <div class="github_link">Check out GitHub</div>
+        </section>
+
+        <section class="right_text">
+          <section class="decentralized">
+            <div class="title">Decentralized</div>
+            <div class="text">
+              Trustless infrastructure is independent from any single authority.
+            </div>
+          </section>
+
+          <section class="efficent">
+            <div class="title">Efficent</div>
+            <div class="text">
+              Permissionless network optimized for best performance (storage, latency, throughput).
+            </div>
+          </section>
+
+          <section class="auditable">
+            <div class="title">Auditable</div>
+            <div class="text">
+              Every request on Fluence network is verified and its correctness is publicly auditable.
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section class="performance">
+        <h1>High performance decentralized backend for the Web 3.0</h1>
+        <h2>Connect existing blockchains and other public decentralized data sources, and build trustless query interfaces with custom data processing, making decentralized data easily consumable by applications.</h2>
+
+        <section class="info">
+
+          <section class="top">
+            <section class="index">
+              <section class="text_info">
+                <div class="title">Blockchain index</div>
+                <div class="description">
+                  Matching and aggregating orders from multiple decentralized exchanges
+                </div>
+              </section>
+            </section>
+
+            <section class="public">
+              <section class="text_info">
+                <div class="title">Public data</div>
+                <div class="description">
+                  Running community owned, censorship resistant platforms as serverless apps
+                </div>
+              </section>
+            </section>
+
+
+          </section>
+
+          <section class="bottom">
+            <section class="trading">
+              <section class="text_info">
+                <div class="title">Trading</div>
+                <div class="description">
+                  Managing consortium databases of supply chains or IoT sensors data
+                </div>
+              </section>
+            </section>
+            <section class="database">
+              <section class="text_info">
+                <div class="title">Database</div>
+                <div class="description">
+                  Deploying custom and live APIs for public data
+                </div>
+              </section>
+            </section>
+          </section>
+
+
+        </section>
+      </section>
+
+
+      <section class="try">
+        <h1>Try out what's coming up in Fluence</h1>
+        <h2>Fluence protocol is a work in progress.<br>Check out Fluence first proof of concept release that allows to set up a local Fluence network with a pre-deployed legacy SQL database, test the flow or integrate it with a browser app using Fluence Javascript client.</h2>
+
+        <section class="buttons">
+          <div class="pseudo">
+            <div class="real"></div>
+            <div class="button"><span>WATCH SCREENCAST</span></div>
+          </div>
+          <div class="pseudo">
+            <div class="real"></div>
+            <div class="button"><span>TRY WORKSHOP</span></div>
+          </div>
+        </section>
+      </section>
+
+
+      <section class="updates">
+        <h1>Updates & Events</h1>
+        <section class="blocks">
+          <section class="video">
+            <div class="badge">VIDEO</div>
+            <div class="link"></div>
+            <div class="play"></div>
+            <div class="title">Organize and Access data the way you like it</div>
+          </section>
+
+          <section class="blog">
+            <div class="badge">BLOG POST</div>
+            <div class="link"></div>
+            <div class="title">Organize and Access data the way you like it</div>
+            <div class="description">In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew. Now hands are wanted here, and then again hands are wanted there.</div>
+          </section>
+
+          <section class="event">
+            <div class="badge">EVENT</div>
+            <div class="link"></div>
+            <div class="title">Organize and Access data the way you like it</div>
+            <div class="description">In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew. Now hands are wanted here, and then again hands are wanted there.</div>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section class="footer">
+
+      <section class="top">
+        <div class="text">Connect to the Fluence network now</div>
+        <section class="buttons">
+          <div class="get_started">GET STARTED WITH A CODE</div>
+          <div class="run">RUN A NODE</div>
+        </section>
+        <div class="line"></div>
+      </section>
+
+      <section class="bottom">
+        <section class="logo_block">
+          <div class="logo"></div>
+          <div class="rights">© 2018 Fluence Labs All rights reserved</div>
+        </section>
+
+        <section class="community_block">
+          <div class="title">COMMUNITY</div>
+          <ul>
+            <li>Gitter</li>
+            <li>GitHub</li>
+            <li>Telegram</li>
+            <li>Reddit</li>
+          </ul>
+        </section>
+
+        <section class="labs_block">
+          <div class="title">FLUENCE LABS</div>
+          <ul>
+            <li>Team</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </section>
+
+        <section class="follow_block">
+          <div class="title">FOLLOW US</div>
+          <section class="email_section">
+            <input class="email" placeholder="Your email">
+            <button class="arrow" type="submit"></button>
+          </section>
+          <section class="icons">
+            <div class="facebook"></div>
+            <div class="twitter"></div>
+            <div class="medium"></div>
+            <div class="youtube"></div>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <script>
+    function selectTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.opacity = "0.0";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        tab_content = document.getElementById(tabName);
+        tab_content.style.opacity = "1.0"
+
+        tab_content = document.getElementById(tabName+"2");
+        tab_content.style.opacity = "1.0"
+
+        evt.currentTarget.className += " active";
+    }
+
+    </script>
+  </body>
+</html>
