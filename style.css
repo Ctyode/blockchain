@@ -350,7 +350,7 @@ body {
 
   .processing .first_block .rectangle {border:solid 1px #e9ebf3;border-radius: 4px;height: 84px;padding: 0 16px;box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);background:white;font-weight: 500;font-size: 18px;font-style: normal;font-stretch: normal;line-height: 1.4;letter-spacing: normal;color:#606584;display: flex;align-items : center;cursor: pointer;}
 
-  .processing .first_block .rectangle:nth-child(1), .processing .first_block .rectangle:nth-child(2) {margin-bottom: 20px;}
+  .processing .first_block .rectangle:nth-child(1), .processing .first_block .rectangle:nth-child(2) {margin-bottom: 16px;}
 
   .processing .second_block {max-width: 348px;width: 33%;background-color: white;margin-left: 30px;height: 288px;border-radius: 4px;position: relative;box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);border: solid 1px #e9ebf3;}
 
