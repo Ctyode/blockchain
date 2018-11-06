@@ -51,9 +51,9 @@
         <h1>Processing Blockchain Data in Real-Time</h1>
         <section class="blocks">
           <section class="first_block">
-            <div class="top">Get token balances for Ethereum wallets matching specific rule</div>
-            <div class="middle">Aggregate order books from a few DEX</div>
-            <div class="bottom">Calculate Dogecoin average transaction costs aggregated by day</div>
+            <div class="rectangle active" onclick="selectImage(event, 'list')">Get token balances for Ethereum wallets matching specific rule</div>
+            <div class="rectangle" onclick="selectImage(event, 'blue')">Aggregate order books from a few<br> DEX</div>
+            <div class="rectangle" onclick="selectImage(event, 'red')">Calculate Dogecoin average transaction costs aggregated by day</div>
           </section>
 
           <section class="second_block">
@@ -83,7 +83,7 @@
           </section>
 
           <section class="third_block">
-            <section id="sql2" class="tabcontent third" style="opacity: 1.0;">
+            <section id="list" class="tabimage third" style="opacity: 1.0;">
               <section class="block_title">
                 <div class="asset">ASSET</div>
                 <div class="quantity">QUANTITY</div>
@@ -108,11 +108,11 @@
               </ul>
             </section>
 
-            <section id="graph2" class="tabcontent third">
+            <section id="red" class="tabimage third">
               <div class="graph_image"></div>
             </section>
 
-            <section id="custom2" class="tabcontent third">
+            <section id="blue" class="tabimage third">
               <div class="custom_image"></div>
             </section>
 
@@ -238,7 +238,7 @@
           </section>
 
           <section class="blog">
-            <div class="badge">BLOG POST</div>
+            <div class="badge">BLOG</div>
             <div class="link"></div>
             <div class="title">Organize and Access data the way you like it</div>
             <div class="description">In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew. Now hands are wanted here, and then again hands are wanted there.</div>
@@ -306,6 +306,25 @@
     </section>
 
     <script>
+
+    function selectImage(evt, tabName) {
+      tabcontent = document.getElementsByClassName("tabimage");
+
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.opacity = "0.0";
+      }
+
+      tablinks = document.getElementsByClassName("rectangle");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      tab_content = document.getElementById(tabName);
+      tab_content.style.opacity = "1.0"
+
+      evt.currentTarget.className += " active";
+    }
+
     function selectTab(evt, tabName) {
         var i, tabcontent, tablinks;
 
@@ -333,10 +352,6 @@
         } else if (tabName == "custom") {
           line.style.marginLeft = "66.6%";
         }
-
-        tab_content = document.getElementById(tabName+"2");
-        tab_content.style.opacity = "1.0"
-
         evt.currentTarget.className += " active";
     }
 
