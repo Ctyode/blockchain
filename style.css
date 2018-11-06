@@ -46,7 +46,7 @@ body {
 }
 
 .overlay {
-    background: linear-gradient(white, transparent);
+    background: linear-gradient(white, #ffffff00);
     margin: 0;
     height: 150px;
     position: relative;
@@ -587,7 +587,6 @@ body {
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 16px;
     letter-spacing: normal;
     color: #ffffff;
   opacity: 0.35;
@@ -656,7 +655,7 @@ body {
 
   .processing .second_block {max-width: 348px;width: 33%;background-color: white;margin-left: 30px;height: 288px;border-radius: 4px;position: relative;box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);border: solid 1px #e9ebf3;}
 
-  .processing .second_block .lang {height: 56px;border-radius: 4px 4px 0 0;box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);background-color: white;}
+  .processing .second_block .lang {height: 54px;border-radius: 4px 4px 0 0;box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);background-color: white;}
 
   .processing .second_block .select .element {float: left;text-align: center;width: 33%;}
 
@@ -888,7 +887,6 @@ body {
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 16px;
     letter-spacing: normal;
     color: #ffffff;
   opacity: 0.35;
@@ -939,7 +937,7 @@ body {
 
 }
 
-.tab {
+.tab {height: 55px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -1250,7 +1248,6 @@ body {
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 16px;
     letter-spacing: normal;
     color: #ffffff;
   opacity: 0.35;
@@ -1313,7 +1310,7 @@ body {
 }
 
 .overlay {
-    background: linear-gradient(white, transparent);
+    background: linear-gradient(white, #ffffff00);
     margin: 0;
     height: 150px;
     position: relative;
@@ -1335,7 +1332,7 @@ body {
 
 .header .logo {position: absolute;object-fit: contain;width: 114px;height: 24px;left: 0;background-repeat: no-repeat;background-image: url("img/combined-shape.svg");}
 
-.header .menu {position: absolute;right: 0;color: rgba(96, 101, 132, 0.75);}
+.header .menu {position: absolute;right: initial;color: rgba(96, 101, 132, 0.75);}
 
 .header .menu .menu_element {transition: 0.3s ease-in;cursor: pointer;text-align: center;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1;letter-spacing: normal;color: rgba(96, 101, 132, 0.75);}
 
@@ -1876,7 +1873,6 @@ body {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 16px;
   letter-spacing: normal;
   color: #ffffff;
 opacity: 0.35;
