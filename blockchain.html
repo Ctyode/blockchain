@@ -30,6 +30,24 @@
 
         <div class="menu_element">Github</div>
         </section>
+
+        <button id="myBtn"></button>
+
+        <section id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close"></span>
+            <section class="links">
+              <a href="#">Fluence Labs</a>
+              <a href="#">Blog</a>
+              <a href="#">Github</a>
+              <div class="modal_line"></div>
+              <a href="#">Gitter</a>
+              <a href="#">Telegram</a>
+              <a href="#">Reddit</a>
+            </section>
+          </div>
+        </section>
+
       </div>
 
       <section class="manage_block">
@@ -51,9 +69,9 @@
         <h1>Processing Blockchain Data in Real-Time</h1>
         <section class="blocks">
           <section class="first_block">
-            <div class="rectangle active" onclick="selectImage(event, 'list')">Get token balances for Ethereum wallets matching specific rule</div>
-            <div class="rectangle" onclick="selectImage(event, 'blue')">Aggregate order books from a few<br> DEX</div>
-            <div class="rectangle" onclick="selectImage(event, 'red')">Calculate Dogecoin average transaction costs aggregated by day</div>
+            <div class="rectangle active" onclick="selectProc(event, 'proc0')">Get token balances for Ethereum wallets matching specific rule</div>
+            <div class="rectangle" onclick="selectProc(event, 'proc1')">Aggregate order books from a few<br> DEX</div>
+            <div class="rectangle" onclick="selectProc(event, 'proc2')">Calculate Dogecoin average transaction costs aggregated by day</div>
           </section>
 
           <section class="second_block">
@@ -71,11 +89,13 @@
             </section>
 
             <section id="graph" class="tabcontent">
-              <div class="code"><div class="blue_text">SELECT</div><br><div class="blue_text">DATE</div>(timestamp) <div class="blue_text">AS</div> date, <br><div class="blue_text">AVG</div>(gas_price * gas_used) <div class="blue_text">AS</div> tx_cost <br><div class="blue_text">FROM</div> transactions tx <br><div class="blue_text">GROUP BY DATE</div>(timestamp)</div>
+              <div class="code">{<br>&emsp;account(address: <div class="green_text">"0x0ddd..."</div>) {<br>&emsp;&emsp;address<br>&emsp;&emsp;balances {<br>&emsp;&emsp;&emsp;asset { name symbol }<br>&emsp;&emsp;&emsp;amount<br>&emsp;&emsp;}<br>}</div>
             </section>
 
             <section id="custom" class="tabcontent">
-              <div class="code"><div class="blue_text">SELECT</div> amount, price, type, source <br><div class="blue_text">FROM</div> orders <br><div class="blue_text">WHERE</div> source <div class="blue_text">IN</div> (<div class="green_text">“0x0ddd…”</div> , <br><div class="green_text">“0x545…”</div>, <div class="green_text">“0xg46de3…”</div>)</div>
+              <div class="code"><div class="create_custom">
+                Create and deploy your custom query language<br><div class="more">Read more</div>
+              </div>
             </section>
             <div class="soon">COMING SOON</div>
 
@@ -83,7 +103,7 @@
           </section>
 
           <section class="third_block">
-            <section id="list" class="tabimage third" style="opacity: 1.0;">
+            <section id="proc0" class="tabimage third" style="opacity: 1.0;">
               <section class="block_title">
                 <div class="asset">ASSET</div>
                 <div class="quantity">QUANTITY</div>
@@ -108,12 +128,12 @@
               </ul>
             </section>
 
-            <section id="red" class="tabimage third">
-              <div class="graph_image"></div>
+            <section id="proc1" class="tabimage third">
+              <div class="custom_image"></div>
             </section>
 
-            <section id="blue" class="tabimage third">
-              <div class="custom_image"></div>
+            <section id="proc2" class="tabimage third">
+              <div class="graph_image"></div>
             </section>
 
             </section>
@@ -255,7 +275,6 @@
     </section>
 
     <section class="footer">
-
       <section class="top">
         <div class="text">Connect to the Fluence network now</div>
         <section class="buttons">
@@ -269,7 +288,6 @@
           <div class="logo"></div>
           <div class="rights">© 2018 Fluence Labs All rights reserved</div>
         </section>
-
         <section class="community_block">
           <div class="title">COMMUNITY</div>
           <ul>
@@ -303,24 +321,93 @@
           </section>
         </section>
       </section>
+
+    </section>
+
+    <section class="footer_mobile">
+      <section class="top">
+        <div class="text">Connect to the Fluence network now</div>
+        <section class="buttons">
+          <div class="get_started">GET STARTED WITH A CODE</div>
+          <div class="run">RUN A NODE</div>
+        </section>
+      </section>
+
+      <section class="bottom">
+        <section class="community_block">
+          <div class="title">COMMUNITY</div>
+          <ul>
+            <li>Gitter</li>
+            <li>GitHub</li>
+            <li>Telegram</li>
+            <li>Reddit</li>
+          </ul>
+        </section>
+
+        <section class="labs_block">
+          <div class="title">FLUENCE LABS</div>
+          <ul>
+            <li>Team</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </section>
+
+        <section class="follow_block">
+          <div class="title">FOLLOW US</div>
+          <section class="email_section">
+            <input class="email" placeholder="Your email">
+            <button class="arrow" type="submit"></button>
+          </section>
+          <section class="icons">
+            <div class="facebook"></div>
+            <div class="twitter"></div>
+            <div class="medium"></div>
+            <div class="youtube"></div>
+          </section>
+        </section>
+      </section>
+      <section class="logo_block">
+        <div class="logo"></div>
+        <div class="rights">© 2018 Fluence Labs all rights reserved</div>
+      </section>
     </section>
 
     <script>
 
-    function selectImage(evt, tabName) {
+    SQLS = ['<div class="code"><div class="blue_text">SELECT</div> name, symbol, amount<br><div class="blue_text">FROM</div> token_balances<br><div class="blue_text">WHERE</div> address = <div class="green_text">0x0ddd...</div></div>',
+            '<div class="code"><div class="blue_text">SELECT</div> amount, price, type, source <br><div class="blue_text">FROM</div> orders <br><div class="blue_text">WHERE</div> source <div class="blue_text">IN</div> (<div class="green_text">“0x0ddd…”</div> , <br><div class="green_text">“0x545…”</div>, <div class="green_text">“0xg46de3…”</div>)</div>',
+            '<div class="code"><div class="blue_text">SELECT</div><br><div class="blue_text">DATE</div>(timestamp) <div class="blue_text">AS</div> date, <br><div class="blue_text">AVG</div>(gas_price * gas_used) <div class="blue_text">AS</div> tx_cost <br><div class="blue_text">FROM</div> transactions tx <br><div class="blue_text">GROUP BY DATE</div>(timestamp)</div>'
+            ];
+
+    GRAPHS = ['<div class="code">{<br>&emsp;account(address: <div class="green_text">"0x0ddd..."</div>) {<br>&emsp;&emsp;address<br>&emsp;&emsp;balances {<br>&emsp;&emsp;&emsp;asset { name symbol }<br>&emsp;&emsp;&emsp;amount<br>&emsp;&emsp;}<br>}</div>',
+              '<div class="code">{ <div class="blue_text">getOrders</div>({sources: [<div class="green_text">“0x0ddd…”</div> , <div class="green_text">“0x545…”</div>, <div class="green_text">“0xg46de3…”</div>], pair: <div class="green_text">“BTC/USD”</div>}) {<br>&emsp;&emsp;amount,<br>&emsp;&emsp;price,<br>&emsp;&emsp;type,<br>&emsp;&emsp;source<br>&emsp;}<br>}</div>',
+              '<div class="code">{<br>&emsp;<div class="blue_text">getAverageFee</div>(period: day) {<br>&emsp;&emsp;date,<br>&emsp;&emsp;tx_cost<br>&emsp;}<br>}</div>'
+             ];
+
+    function selectProc(evt, procName) {
       tabcontent = document.getElementsByClassName("tabimage");
 
+      numb = procName.charAt(procName.length-1);
+
+      tabb = document.getElementById("sql");
+      tabb.innerHTML = SQLS[numb];
+
+      tabb = document.getElementById("graph");
+      tabb.innerHTML = GRAPHS[numb];
+
       for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.opacity = "0.0";
+      	if (tabcontent[i].id == procName) {
+           tabcontent[i].style.opacity = "1.0";
+      	} else {
+      		tabcontent[i].style.opacity = "0.0";
+      	}
       }
 
       tablinks = document.getElementsByClassName("rectangle");
       for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
-
-      tab_content = document.getElementById(tabName);
-      tab_content.style.opacity = "1.0"
 
       evt.currentTarget.className += " active";
     }
@@ -329,7 +416,6 @@
         var i, tabcontent, tablinks;
 
         tabcontent = document.getElementsByClassName("tabcontent");
-
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.opacity = "0.0";
         }
@@ -353,6 +439,26 @@
           line.style.marginLeft = "66.6%";
         }
         evt.currentTarget.className += " active";
+    }
+
+    var modal = document.getElementById('myModal');
+    // var body = document.body;
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.className += " active";
+        // body.className += " open"
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.className = modal.className.replace(" active", "");
     }
 
     </script>
