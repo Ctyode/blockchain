@@ -2086,7 +2086,7 @@ font-family: 'CircularStd';}
   overflow:hidden;
 } */
 
-#myBtn {cursor: pointer;background-image: url("img/menu.svg");width: 24px;height: 20px;padding: 0;border: none;}
+#myBtn {background: none;cursor: pointer;background-image: url("img/menu.svg");width: 24px;height: 20px;padding: 0;border: none;}
 
 #myBtn:focus {outline:0;}
 
