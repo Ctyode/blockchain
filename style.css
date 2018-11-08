@@ -41,6 +41,8 @@
 
 .medium {cursor: pointer;}
 
+.bottom .community_block a {color:white;}
+
 a {
   display: block;
   text-decoration: none;
