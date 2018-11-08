@@ -579,7 +579,7 @@ body {
 
   .footer .top .buttons {display: flex;right: 0;position: absolute;}
 
-  .footer .top .buttons .get_started {cursor: pointer;width: 321px;margin-top: 60px;padding: 0 50px;display: flex;align-items: center;box-sizing: border-box;height: 58px;float: left;font-size: 16px;font-weight: bold;font-style: normal;margin-right: 30px;font-stretch: normal;line-height: 1;letter-spacing: normal;color: #2158e2;border-radius: 8px;background-color: #ffffff;transition: 0.3s ease-in;}
+  .footer .top .buttons .get_started {cursor: pointer;width: 321px;margin-top: 60px;padding: 20px 0;text-align: center;align-items: center;box-sizing: border-box;height: 58px;float: left;font-size: 16px;font-weight: bold;font-style: normal;margin-right: 30px;font-stretch: normal;line-height: 1;letter-spacing: normal;color: #2158e2;border-radius: 8px;background-color: #ffffff;transition: 0.3s ease-in;}
 
   .footer .top .buttons .get_started:hover {background-color: rgba(255, 255, 255, 0.75);}
 
