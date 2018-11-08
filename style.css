@@ -140,6 +140,7 @@ body {
 
 .community_content a {
   width: fit-content;
+  width: -moz-fit-content;
   display: flex;
   margin: 20px 24px;
   text-decoration: none;
@@ -365,7 +366,7 @@ body {
 
 .try h2 {max-width: 730px;margin: auto;margin-top: 40px;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.5;letter-spacing: normal;text-align: center;color: rgba(96, 101, 132, 0.75);}
 
-.try .buttons {width: fit-content;margin: auto;display: flex;font-weight: 800;color: white;margin-top: 40px;}
+.try .buttons {width: fit-content;width: -moz-fit-content;margin: auto;display: flex;font-weight: 800;color: white;margin-top: 40px;}
 
 .try .buttons .pseudo {width: 300px;}
 
@@ -426,6 +427,7 @@ body {
   .processing .second_block .code .create_custom .more {
     transition: 0.3s ease-in;
     width: fit-content;
+    width: -moz-fit-content;
     font-size: 16px;
     font-weight: bold;
     display: flex;
@@ -897,7 +899,7 @@ body {
 
   .footer .top .buttons {display: flex;right: 0;position: absolute;}
 
-  .footer .top .buttons .get_started {cursor: pointer;width: 321px;margin-top: 60px;padding: 0 50px;display: flex;align-items: center;box-sizing: border-box;height: 58px;float: left;font-size: 16px;font-weight: bold;font-style: normal;margin-right: 30px;font-stretch: normal;line-height: 1;letter-spacing: normal;color: #2158e2;border-radius: 8px;background-color: #ffffff;transition: 0.3s ease-in;}
+  .footer .top .buttons .get_started {cursor: pointer;width: 321px;margin-top: 60px;align-items: center;box-sizing: border-box;height: 58px;float: left;font-size: 16px;font-weight: bold;font-style: normal;margin-right: 30px;font-stretch: normal;line-height: 1;letter-spacing: normal;color: #2158e2;border-radius: 8px;background-color: #ffffff;transition: 0.3s ease-in;padding: 20px 0;text-align: center;}
 
   .footer .top .buttons .get_started:hover {background-color: rgba(255, 255, 255, 0.75);}
 
@@ -1504,6 +1506,7 @@ body {
 
 .community_content a {
   width: fit-content;
+  width: -moz-fit-content;
   display: flex;
   margin: 20px 24px;
   text-decoration: none;
