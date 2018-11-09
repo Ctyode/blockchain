@@ -1,0 +1,399 @@
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: 400;
+  src: url("fonts/Circular/CircularStd-Book.otf");
+}
+
+
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: 500;
+  src: url("fonts/Circular/CircularStd-Medium.otf");
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: 800;
+  src: url("fonts/Circular/CircularStd-Bold.otf");
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: 900;
+  src: url("fonts/Circular/CircularStd-Black.otf");
+}
+
+body {
+  margin: 0;
+  font-family: 'CircularStd';
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    position: absolute;
+    height: 40px;
+    top: 15px;
+    width: 100px;
+}
+
+.main {
+  max-width: 1110px;
+  padding: 0 25px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 25px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown {
+    cursor: pointer;
+    float: left;
+}
+
+.triangle {
+    position: absolute;
+    background-image: url("img/triangle.svg");
+    width: 30px;
+    opacity: 0.0;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 18px;
+    background-size: 100% 100%;
+}
+
+.community_content {
+    cursor: default;
+    top: 30px;
+    width: 160px;
+    height: 174px;
+    opacity: 0.0;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);
+    border: solid 1px #e9ebf3;
+    background-color: #ffffff;
+}
+
+.community_content a {
+  width: fit-content;
+  width: -moz-fit-content;
+  display: flex;
+  margin: 20px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #2e72fe;
+}
+
+.community_content a:nth-child(1) {
+  margin-top: 24px;
+}
+
+.community_content a:hover {opacity: 0.75;}
+
+.dropdown:hover .community_content {transition: 0.3s ease-in;display: block;right: 10px;opacity:1.0;}
+
+.dropdown:hover .triangle {transition: 0.3s ease-in;display: block;right: 10px;opacity:1.0;}
+
+.header .logo {position: absolute;object-fit: contain;width: 114px;height: 24px;left: 0;background-repeat: no-repeat;background-image: url("img/combined-shape.svg");}
+
+.header .menu {position: absolute;right: 0;color: rgba(96, 101, 132, 0.75);}
+
+.header .menu .menu_element {transition: 0.3s ease-in;cursor: pointer;text-align: center;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1;letter-spacing: normal;color: rgba(96, 101, 132, 0.75);}
+
+.header .menu .menu_element:hover {opacity: 0.75;}
+
+.header .menu .menu_element:nth-child(1) {
+    float: left;
+    margin-right: 40px;
+}
+
+.header .menu .menu_element:nth-child(2) {
+    float: left;
+    margin-right: 40px;
+}
+
+.header .menu .menu_element:nth-child(3) {
+    float: left;
+    margin-right: 40px;
+}
+
+.header .menu .menu_element:nth-child(4) {display: flex;}
+
+h1 {
+  font-size: 42px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f2753;
+}
+
+.team h1 {
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+h2 {
+ font-size: 18px;
+ font-weight: normal;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: 1.56;
+ letter-spacing: normal;
+ text-align: center;
+ color: #606584;
+}
+
+.team h2 {
+  width: 730px;
+  margin: auto;
+}
+
+.team {
+    width: 100%;
+}
+
+.members {margin: auto;margin-top: 60px;width: 961px;flex-wrap: wrap;display: flex;}
+
+.member {margin-left: 180px;margin-bottom: 80px;}
+
+.member:nth-child(1) {margin-left: 0;}
+
+.member:nth-child(4) {margin-left: 0;}
+
+.member:nth-child(7) {margin-left: 0;}
+
+.member .image {width: 200px;height: 200px;background-color: blue;border-radius: 8px;}
+
+.member .name {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1f2753;
+    margin-top: 20px;
+}
+
+.member .job {
+    font-size: 14px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e72fe;
+    margin-top: 10px;
+}
+
+.person {width: 200px;display: grid;}
+
+.member, .hidden {
+  transition: 0.3s ease-in;
+  z-index: 99;
+  grid-column: 1;
+  grid-row: 1;
+  }
+
+.person .hidden {position: absolute;opacity: 0.0;width: 351px;box-sizing: border-box;height: 510px;margin-left: -76px;margin-top: -41px;z-index: 100;padding: 40px 75px;border-radius: 8px;box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);border: solid 1px #e9ebf3;background-color: #ffffff;}
+
+.person .hidden .image {margin: auto;background-color: red;}
+
+.person .hidden .member {margin:0;}
+
+.person .hidden .member .description {font-size: 14px;font-weight: normal;font-style: normal;width: 270px;margin-left: -37px;font-stretch: normal;line-height: 1.43;letter-spacing: normal;text-align: center;color: rgba(96, 101, 132, 0.75);margin-top: 20px;}
+
+.person .hidden .member .links {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    width: 50px;
+}
+
+.person .hidden .member .links .github {
+    width: 20px;
+    height: 20px;
+    background-image: url("img/github.svg");
+}
+
+.person .hidden .member .links .linkedin {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-image: url(img/linkedin.svg);
+}
+
+.person:hover .hidden {opacity: 1.0;}
+
+
+.media h1 {
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.media .blocks {
+  display: flex;
+}
+
+.media .blocks .logo img {width: 100%;}
+
+.media .blocks .logo {margin-bottom: 18px;}
+
+.media .blocks .first .logo {
+    width: 53px;
+    height: 30px;
+}
+.media .blocks .second .logo {
+  width: 170px;
+  height: 30px;
+}
+.media .blocks .third .logo {
+  width: 116px;
+  height: 30px;
+}
+
+.media .blocks .text {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: rgba(96, 101, 132, 0.75);
+}
+
+.media .blocks .link {
+    margin-top: 18px;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: #2e72fe;
+}
+
+.media .blocks .link::before {
+    content: "";
+    display: block;
+    background-image: url("img/link-blue.svg");
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+}
+
+.media .blocks .first {
+  padding: 24px 28px;
+  border-radius: 8px;
+  box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);
+  border: solid 1px #e9ebf3;
+  background-color: #ffffff;
+}
+
+.media .blocks .second {
+  margin-left: 30px;
+  padding: 24px 28px;
+  border-radius: 8px;
+  box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);
+  border: solid 1px #e9ebf3;
+  background-color: #ffffff;
+}
+
+.media .blocks .third {
+  margin-left: 30px;
+  padding: 24px 28px;
+  border-radius: 8px;
+  box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);
+  border: solid 1px #e9ebf3;
+  background-color: #ffffff;
+}
+
+.advisors {padding-bottom: 120px;border-bottom: 1px solid rgba(96, 101, 132, 0.15);}
+
+.media {
+    margin-bottom: 140px;
+    margin-top: 120px;
+}
+
+.media .question {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(96, 101, 132, 0.75);
+    margin-top: 40px;
+}
+
+.media .pr_link {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e72fe;
+    margin-top: 10px;
+}
+
+.sponsors {
+    position: relative;
+    width: 823px;
+    margin: auto;
+    display: flex;
+    margin-top: 120px;
+}
+
+.sponsors .logo {display:flex;margin-left: 49px !important;}
+
+.sponsors .logo:nth-child(1) {
+    width: 175px;
+    height: 30px;
+    margin: auto !important;
+}
+.sponsors .logo:nth-child(2) {
+    width: 72px;
+    height: 32px;
+    margin: auto;
+}
+.sponsors .logo:nth-child(3) {
+    width: 120px;
+    height: 42px;
+    margin: auto;
+}
+.sponsors .logo:nth-child(4) {
+    width: 130px;
+    height: 37px;
+    margin: auto;
+}
+.sponsors .logo:nth-child(5) {
+    width: 130px;
+    height: 50px;
+    margin: auto;
+}
+
+.sponsors .logo img {width: 100%}
