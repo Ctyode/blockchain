@@ -1891,7 +1891,7 @@ body {
   transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
 }
 
-.updates .blocks å .title {float: left;font-size: 18px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.3;margin-top: 126px;letter-spacing: normal;padding: 0 24px;color: #ffffff;}
+.updates .blocks a .title {float: left;font-size: 18px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.3;margin-top: 126px;letter-spacing: normal;padding: 0 24px;color: #ffffff;}
 
 .updates .blocks .blog {max-width: 350px;margin-top: 25px;width: 100%;height: 244px;border-radius: 8px;box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);border: solid 1px #e9ebf3;background-color: #ffffff;}
 
