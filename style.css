@@ -1436,18 +1436,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.mButton {
-  float: right;
-
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .overlay {
     background: linear-gradient(white, #ffffff00);
     margin: 0;
