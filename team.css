@@ -875,7 +875,7 @@ font-family: 'CircularStd';}
 
   .desktop_hidden .links {float: left;margin:0;width: fit-content;}
   .desktop_hidden .links .linkedin {margin:0 !important;}
-  .desktop_hidden .links .github {margin-right: 20px;}
+  .desktop_hidden .links .github {margin: 0 !important;margin-right: 10px !important;}
 
   .footer_mobile {display: none;}
 
@@ -1139,7 +1139,7 @@ font-family: 'CircularStd';}
 
   .desktop_hidden .links {float: left;margin:0;width: fit-content;}
   .desktop_hidden .links .linkedin {margin:0 !important;}
-  .desktop_hidden .links .github {margin-right: 20px;}
+  .desktop_hidden .links .github {margin: 0 !important;margin-right: 10px !important;}
 
   .advisors {padding-bottom: inherit;max-width: 350px;margin: auto;}
   .advisors h1 {text-align: left;font-size: 36px;margin: 0;}
