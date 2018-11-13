@@ -195,15 +195,96 @@ h2 {
 
 .member {margin-left: 180px;margin-bottom: 120px;}
 
+.person .member:hover .hidden {
+  display: block;
+
+  -webkit-animation: fadeInFromNone 0.3s ease-in;
+  -moz-animation: fadeInFromNone 0.3s ease-in;
+  -o-animation: fadeInFromNone 0.3s ease-in;
+  animation: fadeInFromNone 0.3s ease-in;
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
 .member:nth-child(1) {margin-left: 0;}
 
 .member:nth-child(4) {margin-left: 0;}
 
 .member:nth-child(7) {margin-left: 0;}
 
-.member .image {width: 200px;height: 200px;border-radius: 8px;}
+.hidden_member .name, .hidden_member .job {
+    margin-left: 1px;
+}
 
-.member .name {
+.hidden_member .image, .member .image {width: 200px;height: 200px;border-radius: 8px;}
+
+.hidden_member .name, .member .name {
     font-size: 20px;
     font-weight: bold;
     font-style: normal;
@@ -215,7 +296,7 @@ h2 {
     margin-top: 20px;
 }
 
-.member .job {
+.hidden_member .job, .member .job {
     font-size: 14px;
     font-weight: 900;
     font-style: normal;
@@ -231,12 +312,12 @@ h2 {
 
 .person .image img {width: 100%;border-radius: 8px;}
 
-.member, .hidden {
+.hidden_member, .member, .hidden {
   transition: 0.3s ease-in;
   z-index: 99;
   grid-column: 1;
   grid-row: 1;
-  }
+}
 
 .person:nth-child(1) {z-index: 80;}
 .person:nth-child(2) {z-index: 79;}
@@ -255,15 +336,30 @@ h2 {
 .person:nth-child(7) {margin-left: 0;}
 .person:nth-child(10) {margin-left: 0;}
 
-.person .hidden {position: absolute;opacity: 0.0;width: 351px;box-sizing: border-box;margin-left: -76px;margin-top: -41px;z-index: 100;border-radius: 8px;box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);border: solid 1px #e9ebf3;background-color: #ffffff;}
+.person .hidden {
+  position: absolute;
+  display: none;
 
-.person .hidden .image {margin: auto;}
+  box-sizing: border-box;
+  margin-left: -76px;
+  margin-top: -311px;
+  z-index: 100;
+  border-radius: 8px;
+  box-shadow: 0 12px 36px 0 rgba(31, 39, 83, 0.07);
+  border: solid 1px #e9ebf3;
+  background-color: #ffffff;
+  width: 351px;
 
-.person .hidden .member {margin:0;padding: 40px 75px;}
 
-.person .hidden .member .description {font-size: 14px;font-weight: normal;font-style: normal;width: 270px;font-stretch: normal;line-height: 1.43;margin-left: -33px;letter-spacing: normal;text-align: center;color: rgba(96, 101, 132, 0.75);margin-top: 20px;}
+}
 
-.person  .member .links {
+.person .hidden .hidden_member .image {margin: auto;}
+
+.person .hidden .hidden_member {margin:0;padding: 40px 75px;}
+
+.person .hidden .hidden_member .description {font-size: 14px;font-weight: normal;font-style: normal;width: 270px;font-stretch: normal;line-height: 1.43;margin-left: -33px;letter-spacing: normal;text-align: center;color: rgba(96, 101, 132, 0.75);margin-top: 20px;}
+
+.hidden_member .links, .person  .member .links {
     display: flex;
     margin: auto;
     margin-top: 20px;
@@ -271,20 +367,21 @@ h2 {
     width: -moz-fit-content;
 }
 
-.person .member .links .github {
+.hidden_member .links .github, .person .member .links .github {
     width: 20px;
     height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     background-image: url("img/github.svg");
 }
 
-.person .member .links .linkedin {
+.hidden_member .links .linkedin, .person .member .links .linkedin {
     width: 20px;
     height: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     background-image: url(img/linkedin.svg);
 }
-
-.person:hover .hidden {opacity: 1.0;}
 
 
 .media h1 {
@@ -374,6 +471,8 @@ h2 {
 }
 
 .advisors {padding-bottom: 120px;border-bottom: 1px solid rgba(96, 101, 132, 0.15);}
+
+.advisors .person:nth-child(4) .hidden {margin-top: -337px;}
 
 .media {
     margin-bottom: 140px;
@@ -799,20 +898,6 @@ font-family: 'CircularStd';}
   .footer .top .buttons .run {margin-right: 0 !important;margin-left: 20px;transition: 0.3s ease-in;cursor: pointer;width: 321px;align-items: center;text-align: center;box-sizing: border-box;/* height: 58px; *//* font-size: 16px; */padding: 20px 0;/* font-weight: bold; *//* font-style: normal; *//* font-stretch: normal; *//* line-height: 1; *//* margin-left: 20px; *//* letter-spacing: normal; *//* color: #2158e2; */display: block;/* border-radius: 8px; *//* background-color: #ffffff; */}
 
   .footer .top .buttons .run:hover {background-color: rgba(255, 255, 255, 0.75);}
-
-  /* .footer .top {display: flex;height: 178px;border-bottom: 1px solid rgba(255, 255, 255, 0.25);}
-
-  .footer .top .text {width: 30%;font-size: 22px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.2;margin-top: 70px;margin-left: 80px;letter-spacing: normal;color: #ffffff;}
-
-  .footer .top .buttons {display: flex;right: 0;position: absolute;}
-
-  .footer .top .buttons .get_started {cursor: pointer;width: 321px;margin-top: 60px;padding: 20px 0;box-sizing: border-box;text-align: center;height: 58px;float: left;font-size: 16px;font-weight: bold;font-style: normal;margin-right: 30px;font-stretch: normal;line-height: 1;letter-spacing: normal;color: #2158e2;border-radius: 8px;background-color: #ffffff;transition: 0.3s ease-in;}
-
-  .footer .top .buttons .get_started:hover {background-color: rgba(255, 255, 255, 0.75);}
-
-  .footer .top .buttons .run {transition: 0.3s ease-in;cursor: pointer;width: 199px;margin-top: 60px;padding: 0 50px;display: flex;align-items: center;box-sizing: border-box;height: 58px;float: left;font-size: 16px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1;letter-spacing: normal;color: #2158e2;border-radius: 8px;background-color: #ffffff;margin-right: 80px;}
-
-  .footer .top .buttons .run:hover {background-color: rgba(255, 255, 255, 0.75);} */
 
   .footer .bottom {display: flex;height: 320px;}
 
