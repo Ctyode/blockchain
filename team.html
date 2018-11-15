@@ -707,10 +707,15 @@ at 2GIS (20M monthly audience). In charge of the project management track at Cod
 
       <section class="follow_block">
         <div class="title">FOLLOW US</div>
-        <section class="email_section">
-          <input class="email" placeholder="Your email">
-          <button class="arrow" type="submit"></button>
-        </section>
+          <section class="email_section">
+            <input class="email" type="email" id="mce-EMAIL1" placeholder="Your email" oninput="arrColor(this.value, 1)" required>
+
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_83808b5328f42624cbb6c93e4_a9a0e6b567" tabindex="-1" value="" id="securebot"></div>
+
+            <div class="mc_status" id="mc-status1"></div>
+            <button class="button" id="button1" type="submit" onclick="subscVal('mce-EMAIL1')"></button>
+          </section>
+
         <section class="icons">
           <!-- <div class="facebook"></div> -->
           <a href="http://twitter.com/Fluence_One" class="twitter"></a>
@@ -753,10 +758,11 @@ at 2GIS (20M monthly audience). In charge of the project management track at Cod
 
       <section class="follow_block">
         <div class="title">FOLLOW US</div>
-        <section class="email_section">
-          <input class="email" placeholder="Your email">
-          <button class="arrow" type="submit"></button>
-        </section>
+          <section class="email_section">
+            <input class="email" type="email" id="mce-EMAIL2" placeholder="Your email" oninput="arrColor(this.value, 2)" required>
+            <div class="mc_status" id="mc-status2"></div>
+            <button class="button" id="button2" type="submit" onclick="subscVal('mce-EMAIL2')"></button>
+          </section>
         <section class="icons">
           <!-- <div class="facebook"></div> -->
           <a href="http://twitter.com/Fluence_One" class="twitter"></a>
@@ -771,6 +777,7 @@ at 2GIS (20M monthly audience). In charge of the project management track at Cod
     </section>
   </section>
   </body>
+
   <script>
     var modal = document.getElementById('myModal');
     // var body = document.body;
@@ -786,5 +793,67 @@ at 2GIS (20M monthly audience). In charge of the project management track at Cod
     span.onclick = function() {
       modal.className = modal.className.replace(" active", "");
     }
+  </script>
+
+  <script>
+
+    var validation = function (mail) {
+      var pattern = new RegExp("^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$");
+      var ln = mail.length;
+
+      if (ln == 0)              return 'Please fill out this field.';
+      if (ln > 80)              return 'Please select a value that is no more than 80.';
+      if (ln < 5)               return 'Please select a value that is no less than 5.';
+      if (!pattern.test(mail)) return 'Please enter a email address';
+      return "";
+    };
+
+    arrColor = function (mail, numb) {
+      var btn   = document.getElementById("button" + numb);
+      var white = validation(mail);
+
+      if (white.length == 0) {
+        btn.style.opacity = "1.0";
+      } else {
+        btn.style.opacity = "0.35";
+      };
+
+    };
+
+    window.displayMailChimpStatus = function (data) {
+
+      if (!data.result || !data.msg || !mcStatus ) return;
+      mcStatus.innerHTML = data.msg;
+    };
+
+    var submitMailChimpForm = function (status, url) {
+      var ref = window.document.getElementsByTagName( 'script' )[ 0 ];
+      var script = window.document.createElement( 'script' );
+      script.src = url;
+      window.mcStatus = status;
+      ref.parentNode.insertBefore( script, ref );
+      script.onload = function () {
+        this.remove();
+      };
+    };
+
+    function subscVal(mailn) {
+      var mail = document.getElementById(mailn).value;
+      var status = document.getElementById('mc-status' + mailn.charAt(9))
+      var bot   = document.getElementById("securebot").value.length;
+
+      if (bot != 0) return;
+      var ln = mail.length;
+      var error = validation(mail);
+      if (error != "") {
+        status.innerHTML = error;
+        return;
+      };
+
+      var url = "https://one.us7.list-manage.com/subscribe/post-json?u=83808b5328f42624cbb6c93e4&amp;id=a9a0e6b567";
+      url    += '&' + encodeURIComponent("EMAIL") + "=" + encodeURIComponent(mail) + '&c=displayMailChimpStatus';
+      submitMailChimpForm(status, url);
+    }
+
   </script>
 </html>

@@ -606,7 +606,7 @@ h2 {
 .footer .bottom .follow_block .email_section {
     margin-top: 40px;
     position: relative;
-    display: flex;
+    display: block;
     flex-direction: row;
 }
 
@@ -628,14 +628,12 @@ font-family: 'CircularStd';}
 
 .footer .bottom .follow_block input:focus {border:solid 1px white;outline: none !important;caret-color: #ffffff;}
 
-.footer .bottom .follow_block .arrow {
+.footer .bottom .follow_block .button {
   width: 24px;
   height: 19px;
   opacity: 0.35;
-  top: 0;
-  margin: auto;
+  top: 19px;
   right: 20px;
-  bottom: 0;
   background: none;
   background-image: url(img/arrow.svg);
   position: absolute;
@@ -764,7 +762,7 @@ font-family: 'CircularStd';}
   .footer .bottom .follow_block .email_section {
       margin-top: 40px;
       position: relative;
-      display: flex;
+      display: block;
       flex-direction: row;
   }
 
@@ -784,7 +782,7 @@ font-family: 'CircularStd';}
 
   .footer .bottom .follow_block input:focus {border:solid 1px white;outline: none !important;caret-color: #ffffff;}
 
-  .footer .bottom .follow_block .arrow {width: 24px;height: 19px;opacity: 0.35;top: 0;margin: auto;right: 20px;bottom: 0;background: none;background-image: url("img/arrow.svg");position: absolute;border: none;}
+  .footer .bottom .follow_block .button {width: 24px;height: 19px;opacity: 0.35;top: 19px;right: 20px;background: none;background-image: url("img/arrow.svg");position: absolute;border: none;}
 
   .footer .bottom .follow_block .icons {max-width: 208px;float: left;margin-top: 20px;}
 
@@ -973,7 +971,7 @@ font-family: 'CircularStd';}
   .footer .bottom .follow_block .email_section {
       margin-top: 30px;
       position: relative;
-      display: flex;
+      display: block;
       flex-direction: row;
   }
 
@@ -993,7 +991,7 @@ font-family: 'CircularStd';}
 
   .footer .bottom .follow_block input:focus {border:solid 1px white;outline: none !important;caret-color: #ffffff;}
 
-  .footer .bottom .follow_block .arrow {width: 24px;height: 19px;opacity: 0.35;background: none;background-image: url("img/arrow.svg");position: absolute;right: 21px;top: 17px;margin: 0;border: none;}
+  .footer .bottom .follow_block .button {width: 24px;height: 19px;opacity: 0.35;background: none;background-image: url("img/arrow.svg");position: absolute;right: 21px;top: 17px;margin: 0;border: none;}
 
   .footer .bottom .follow_block .icons {max-width: 208px;float: left;margin-top: 20px;}
 
@@ -1182,7 +1180,7 @@ font-family: 'CircularStd';}
       position: relative;
   }
 
-  .footer_mobile .logo_block {position: relative;margin-top: 180px;padding-bottom: 40px;border-top: 1px solid #ffffff30;padding-top: 40px;width: 100%;box-sizing: border-box !important;padding-left: 40px;}
+  .footer_mobile .logo_block {position: relative;margin-top: 110px;padding-bottom: 40px;border-top: 1px solid #ffffff30;padding-top: 40px;width: 100%;box-sizing: border-box !important;padding-left: 40px;}
 
   .footer_mobile .logo {width: 114px;height: 24px;background-repeat: no-repeat;filter: invert(100%) brightness(62);background-image: url("img/combined-shape.svg");}
 
@@ -1240,8 +1238,8 @@ font-family: 'CircularStd';}
 
   .footer_mobile .bottom .follow_block .email_section {
       margin-top: 40px;
-      position: absolute;
-      display: flex;
+      position: relative;
+      display: block;
       flex-direction: row;
   }
 
@@ -1261,21 +1259,19 @@ font-family: 'CircularStd';}
 
   .footer_mobile .bottom .follow_block input:focus {border:solid 1px white;outline: none !important;caret-color: #ffffff;}
 
-  .footer_mobile .bottom .follow_block .arrow {
+  .footer_mobile .bottom .follow_block .button {
       width: 24px;
       height: 19px;
       opacity: 0.35;
-      top: 0;
-      margin: auto;
-      right: 20px;
-      bottom: 0;
+      top: 19px;
+      left: 215px;
       background: none;
       background-image: url(img/arrow.svg);
       position: absolute;
       border: none;
   }
 
-  .footer_mobile .bottom .follow_block .icons {max-width: 208px;margin-top: 115px;}
+  .footer_mobile .bottom .follow_block .icons {max-width: 208px;margin-top: 20px;}
 
   .footer_mobile .bottom .follow_block .facebook {transition: 0.3s ease-in;width: 32px;height: 32px;margin-right: 20px;background-image: url("img/facebook.svg");float: left;}
 
@@ -1313,4 +1309,16 @@ font-family: 'CircularStd';}
   }
 
   .footer_mobile .bottom .follow_block .youtube:hover {opacity:0.5;}
+}
+
+.follow_block .email_section {display: block;}
+
+.follow_block .button {outline: none;}
+
+.mc_status {
+    margin-top: 13px;
+    color: white;
+    font-weight: 500;
+    width: 259px;
+    line-height: 1.5;
 }
